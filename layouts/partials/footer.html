@@ -10,17 +10,12 @@
        © Copyright 
        {{ now.Format "2006"}} 
        <span class="split">
-        {{ partial "svgs/heart.svg" (dict "fill" "#bbbbbb" "width" 15 "height" 15 ) }}
+         | Tanvir | <a href="mailto:hello@tanviralam.com">Email</a> | <a href="https://www.linkedin.com/in/tanviralambd/">LinkedIn</a>
        </span>
        {{ .Site.Params.Author }}
     {{ end }}
     </div>
 
-    {{ if ne .Site.Params.showPowerBy false }}
-      <div class="powerby">
-        {{ i18n "poweredBy" | safeHTML }}
-      </div>
-    {{ end }}
 </footer>
 
 {{ range .Site.Params.customJS }}
